@@ -1,6 +1,6 @@
 mysql -u root
 CREATE DATABASE openfire;
-GRANT ALL PRIVILEGES ON openfire.* TO openfire@localhost IDENTIFIED BY 'Green@1234';
+GRANT ALL PRIVILEGES ON openfire.* TO openfire@localhost IDENTIFIED BY 'Linux@123';
 FLUSH PRIVILEGES;
 QUIT
 
