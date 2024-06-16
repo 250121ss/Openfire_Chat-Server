@@ -1,0 +1,19 @@
+mysql -u root
+CREATE DATABASE openfire;
+GRANT ALL PRIVILEGES ON openfire.* TO openfire@localhost IDENTIFIED BY 'Green@1234';
+FLUSH PRIVILEGES;
+QUIT
+
+========================
+
+
+==== Import Openfire database schema:  === 
+
+mysql -u root -p
+mysql> use openfire;
+Database changed
+mysql> source /usr/share/openfire/resources/database/openfire_mysql.sql;
+mysql> show tables;
+exit
+
+
